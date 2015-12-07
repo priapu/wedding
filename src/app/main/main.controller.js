@@ -1,6 +1,10 @@
 export class MainController {
-  constructor () {
+  constructor ($scope, $location) {
     'ngInject';
+
+    $scope.rsvp = function(){
+      $location.path('/rsvp');
+    };
   }
 
 }

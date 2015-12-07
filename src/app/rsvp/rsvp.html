@@ -1,0 +1,21 @@
+<h1 class="page_title">Répondez s'il vous plaît</h1>
+<form name="rsvp-form" novalidate="novalidate" class="rsvp-form">
+  <div>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" id="inputName">
+      <label class="mdl-textfield__label" for="inputName">Your name please</label>
+    </div>
+  </div>
+
+  <div>
+    <div class="mdl-textfield mdl-js-textfield">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="plusOne">
+      <label class="mdl-textfield__label" for="plusOne">How many people will be coming?</label>
+      <span class="mdl-textfield__error">Numbers only please</span>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Save</button>
+  </div>
+</form>
