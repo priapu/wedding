@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background: url('/wedding/assets/images/IMG_5440.jpg') no-repeat;
+  background: url('/wedding/assets/images/IMG_5440.jpg') center center no-repeat;
   background-size: cover;
   font-family: Roboto, sans-serif;
   text-align: center;
@@ -72,7 +72,10 @@ p {
 
 .main-container {
   background: rgba(255,255,255,.7);
-  margin-top: 7em;
+
+  @media screen and (min-width: 760px) {
+    margin-top: 7em;
+  }
 }
 
 .page_title {
