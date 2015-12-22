@@ -1,29 +1,32 @@
 <h1 class="page_title">Répondez s'il vous plaît</h1>
-<form name="rsvp-form" novalidate="novalidate" class="rsvp-form">
+<div class="message" data-ng-if="error">
+  That doesn't seem right, please check your input again.
+</div>
+<form name="rsvpform" novalidate="novalidate" class="rsvp-form">
   <div>
     <div class="helper-text">
       I am a friend of:
     </div>
     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="inputFriendOf-1">
-      <input type="radio" id="inputFriendOf-1" class="mdl-radio__button" name="inputFriendOf" value="1" checked>
+      <input type="radio" id="inputFriendOf-1" class="mdl-radio__button" name="inputFriendOf" value="1" checked data-ng-model="input.friendOf">
       <span class="mdl-radio__label">The bride</span>
     </label>
     <span class="spacer"></span>
     <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="inputFriendOf-2">
-      <input type="radio" id="inputFriendOf-2" class="mdl-radio__button" name="inputFriendOf" value="2">
+      <input type="radio" id="inputFriendOf-2" class="mdl-radio__button" name="inputFriendOf" value="2" data-ng-model="input.friendOf">
       <span class="mdl-radio__label">The groom</span>
     </label>
   </div>
   <div>
     <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" id="inputName">
+      <input class="mdl-textfield__input" type="text" id="inputName" data-ng-model="input.name">
       <label class="mdl-textfield__label" for="inputName">Your name please</label>
     </div>
   </div>
 
   <div>
     <div class="mdl-textfield mdl-js-textfield">
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="plusOne">
+      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="plusOne" data-ng-model="input.plusOne">
       <label class="mdl-textfield__label" for="plusOne">How many people will be coming?</label>
       <span class="mdl-textfield__error">Numbers only please</span>
     </div>
@@ -32,6 +35,6 @@
   <div class="form-actions">
     <a class="mdl-button mdl-js-button mdl-button--colored mdl-js-ripple-effect" href="/#/">&larr; Return to home page</a>
     <span class="spacer"></span>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">Save RSVP &rarr;</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" data-ng-click="saveRsvp(input)">Save RSVP &rarr;</button>
   </div>
 </form>

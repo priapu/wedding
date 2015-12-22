@@ -11,6 +11,11 @@ export function routerConfig ($routeProvider) {
       controller: 'RSVPController',
       controllerAs: 'rsvp'
     })
+    .when('/thank-you', {
+      templateUrl: 'app/rsvp/thanks.html',
+      controller: 'RSVPController',
+      controllerAs: 'rsvp'
+    })
     .otherwise({
       redirectTo: '/'
     });

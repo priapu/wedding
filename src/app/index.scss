@@ -96,6 +96,19 @@ body {
   margin-bottom: 1em;
 }
 
+.message {
+  background: #222;
+  color: #fafafa;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-style: italic;
+}
+
+img.full-width {
+  height: auto;
+  width: 100%;
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
