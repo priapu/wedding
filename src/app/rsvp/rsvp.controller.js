@@ -2,11 +2,17 @@ export class RSVPController {
   constructor ($scope, $firebaseArray, $location) {
     'ngInject';
 
-    var resultPage = $location.path().indexOf('thank-you') > 0;
-    console.log(resultPage);
+    var resultPage = $location.path().indexOf('rsvp-list') > 0;
 
     var rsvpRef = new Firebase("https://rsvp-app-dev.firebaseio.com/rsvp-data");
     var rsvpData = $firebaseArray(rsvpRef);
+
+    $scope.rsvpList = [];
+
+    rsvpData.$loaded()
+    .then(function(res){
+      $scope.rsvpList = res;
+    });
 
     $scope.error = false;
 

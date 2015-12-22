@@ -6,7 +6,8 @@
 // endbower
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import url(https://fonts.googleapis.com/css?family=Patua+One);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
 
 @font-face {
   font-family: 'Material Icons';
@@ -46,7 +47,7 @@
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Patua One', cursive;
   font-weight: normal;
 }
 
@@ -56,8 +57,12 @@ body {
   font-family: Roboto, sans-serif;
   text-align: center;
 }
-.container {
 
+p {
+  font-size: 16px;
+}
+
+.container {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 60em;
@@ -74,6 +79,13 @@ body {
   margin-top: 0;
   padding-top: .2em;
 }
+
+.cursive {
+  font-family: 'Satisfy', cursive;
+  font-size: 3em;
+  margin: 0 auto .7em;
+}
+
 
 .mdl-button {
   font-size: 12px;
@@ -92,7 +104,7 @@ body {
 }
 
 .helper-text {
-  font-size: 1.2em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
 
@@ -107,6 +119,16 @@ body {
 img.full-width {
   height: auto;
   width: 100%;
+}
+
+.result-table {
+  width: 100%;
+}
+.result-name {
+  width: 200px
+}
+.result-side {
+  width: 100px
 }
 
 /**

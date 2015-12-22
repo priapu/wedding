@@ -1,0 +1,22 @@
+<h1 class="page_title">RSVP list</h1>
+<div class="padded-content">
+  <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp result-table">
+    <thead>
+      <tr>
+        <th class="result-name">Name</th>
+        <th class="result-side">Side</th>
+        <th>Pax</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-ng-repeat="person in rsvpList">
+        <td>{{ person.name }}</td>
+        <td>
+          <span ng-show="person.friendOf == 1">Bride</span>
+          <span ng-hide="person.friendOf == 1">Groom</span>
+        </td>
+        <td>{{ person.plusOne }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
