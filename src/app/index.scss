@@ -51,13 +51,13 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background: url('/assets/images/photo-1421899528807-04d925f39555.jpg') no-repeat;
+  background: url('/assets/images/IMG_5440.jpg') no-repeat;
   background-size: cover;
   font-family: Roboto, sans-serif;
   text-align: center;
 }
 .container {
-  background: rgba(255,255,255,.7);
+
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 60em;
@@ -66,11 +66,13 @@ body {
 }
 
 .main-container {
+  background: rgba(255,255,255,.7);
   margin-top: 7em;
 }
 
 .page_title {
   margin-top: 0;
+  padding-top: .2em;
 }
 
 .mdl-button {
@@ -82,7 +84,16 @@ body {
 }
 
 .form-actions {
-  padding-top: 2em;
+  padding: 2em 0;
+}
+
+.spacer {
+  padding: .5em;
+}
+
+.helper-text {
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }
 
 /**

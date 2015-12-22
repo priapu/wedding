@@ -5,6 +5,10 @@ export class MainController {
     $scope.rsvp = function(){
       $location.path('/rsvp');
     };
+
+    $scope.saveToCalendar = function(){
+      $location.path('/assets/cal/invite.ics');
+    };
   }
 
 }
